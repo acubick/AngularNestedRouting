@@ -19,7 +19,7 @@ const routes: Routes = [
         path: 'testc', component: TestcComponent
       },
       {
-        path: '', redirectTo: 'tetsa', pathMatch: 'full'
+        path: '', redirectTo: 'testa', pathMatch: 'full'
       },
 
       { path: '**', component: Page404Component  }
