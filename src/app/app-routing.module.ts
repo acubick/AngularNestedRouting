@@ -9,8 +9,8 @@ import { BalanceModule } from './leaves/balance/balance.module';
 import { LeavesModule } from './leaves/leaves.module';
 
 const routes: Routes = [
-  { path: 'dashboard',  loadChildren: () => import(`./dashboard/dashboard.module`).then(m => m.DashboardModule)  },
   { path: 'profile', component: ProfileComponent },
+  { path: 'dashboard',  loadChildren: () => import(`./dashboard/dashboard.module`).then(m => m.DashboardModule)  },
   { path: 'attendance', component: AttendanceComponent },
   { path: 'leaves', loadChildren: () => import(`./leaves/leaves.module`).then(m => m.LeavesModule) },
   { path: '', redirectTo: 'profile', pathMatch: 'full' },
