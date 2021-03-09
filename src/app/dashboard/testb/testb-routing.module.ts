@@ -9,25 +9,25 @@ import {Page404Component} from '../../page404/page404.component';
 
 
 const routes: Routes = [
-  // {
-  //   path: '', component: TestbComponent, children: [
-  //
-  //     {
-  //       path: 'one', component: OneComponent
-  //     },
-  //     {
-  //       path: 'second', component: SecondComponent
-  //     },
-  //     {
-  //       path: 'three', component: ThreeComponent
-  //     },
-  //     {
-  //       path: '', redirectTo: 'one', pathMatch: 'full'
-  //     },
-  //     { path: '**', component:  Page404Component}
-  //     // { path: '**', component: Page404Component  }
-  //   ]
-  // }
+  {
+    path: '', component: TestbComponent, children: [
+
+      {
+        path: 'one', component: OneComponent
+      },
+      {
+        path: 'second', component: SecondComponent
+      },
+      {
+        path: 'three', component: ThreeComponent
+      },
+      {
+        path: '', redirectTo: 'one', pathMatch: 'full'
+      },
+      { path: '**', component:  Page404Component}
+      // { path: '**', component: Page404Component  }
+    ]
+  }
 ];
 
 @NgModule({
