@@ -1,6 +1,7 @@
 //leaves-routing.module.ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { ApplyComponent } from './apply/apply.component';
 import { LeavesComponent } from './leaves.component';
 import { Page404leavesComponent } from './page404leaves/page404leaves.component';
@@ -16,7 +17,7 @@ const routes: Routes = [
       {
         path: '', redirectTo: 'apply', pathMatch: 'full'
       },
-      { path: '**', component: Page404leavesComponent }
+      { path: '**', component: Page404leavesComponent  }
     ]
   }
 ];

@@ -5,6 +5,7 @@ import { BalanceComponent } from './balance.component';
 import { CasualComponent } from './casual/casual.component';
 import { EarnedComponent } from './earned/earned.component';
 import { Page404balanceComponent } from './page404balance/page404balance.component';
+import {Page404Component} from '../../page404/page404.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
         path: '', redirectTo: 'casual', pathMatch: 'full'
       },
       { path: '**', component:  Page404balanceComponent}
+      // { path: '**', component: Page404Component  }
     ]
   }
 ];
